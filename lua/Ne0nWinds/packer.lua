@@ -13,4 +13,5 @@ return require('packer').startup(function(use)
 	use "tpope/vim-fugitive"
 	use "tpope/vim-surround"
 	use "mbbill/undotree"
+	use "phaazon/hop.nvim"
 end)
