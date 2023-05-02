@@ -39,3 +39,6 @@ vim.keymap.set({ "n", "i" }, "<M-k>", ":m-2<CR>==")
 vim.keymap.set({ "n", "i" }, "<M-j>", ":m+1<CR>==")
 vim.keymap.set("v", "<M-k>", ":'<,'>m-2<CR>gv=gv")
 vim.keymap.set("v", "<M-j>", ":'<,'>m+1<CR>gv=gv")
+
+-- Replace without changing the copy buffer
+vim.keymap.set("x", "<leader>r", "\"_dP")
