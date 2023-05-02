@@ -33,3 +33,9 @@ vim.keymap.set("v", "<M-l>", ">gvh")
 
 vim.keymap.set("n", "<M-h>", "<<")
 vim.keymap.set("n", "<M-l>", ">>")
+
+-- Alt Move Keys
+vim.keymap.set({ "n", "i" }, "<M-k>", ":m-2<CR>==")
+vim.keymap.set({ "n", "i" }, "<M-j>", ":m+1<CR>==")
+vim.keymap.set("v", "<M-k>", ":'<,'>m-2<CR>gv=gv")
+vim.keymap.set("v", "<M-j>", ":'<,'>m+1<CR>gv=gv")
